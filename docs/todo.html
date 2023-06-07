@@ -5,13 +5,14 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
+		<link href="./_app/immutable/assets/7.6be4ea79.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.c751c4cc.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.3b555952.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.504fdb92.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/app.3c32bd40.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.908d1d62.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.5dbcf6bf.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/7.045ad29c.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -23,13 +24,18 @@
         <a href="/telltale">Telltale</a>
         <a href="/memory">Memory</a>
         <a href="/chatbot">Chatbot</a></nav></div>
-<h1>Home</h1>
+<title>Dementia Preventor</title>
 
+<body><div class="background svelte-fk39f7"><h2 class="svelte-fk39f7">To-Do List</h2>
+        
+    <input id="skriv" value=""> <button class="add svelte-fk39f7">Add Task 📝</button>
+    <ul>
 
+        <h1 id="done-text" class="svelte-fk39f7">Done ✔:
+        </h1>
+        </ul></div>
 
-<h3>At the top are the websites I created this year :)</h3>
-
-<img src="https://bluemoji.io/emoji/Blue/86.png" alt="fuck you">
+</body>
 
 
 			
@@ -49,7 +55,7 @@
 						import("./_app/immutable/entry/app.3c32bd40.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2],
+							node_ids: [0, 7],
 							data,
 							form: null,
 							error: null

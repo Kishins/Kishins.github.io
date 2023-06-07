@@ -11,7 +11,7 @@
 		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/app.3c32bd40.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.908d1d62.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.5dbcf6bf.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.d205d544.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -23,13 +23,40 @@
         <a href="/telltale">Telltale</a>
         <a href="/memory">Memory</a>
         <a href="/chatbot">Chatbot</a></nav></div>
-<h1>Home</h1>
+<!DOCTYPE html>
+<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capitalism</title></head>
+        <body><h1>The Money Printer</h1>
+            <p>This site is for capitalist scum</p>
+            <button type="button" onclick="increase()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg/252px-US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" alt="dollar" id="dollar"></button> 
+            <h3>Networth: <span id="amount">0</span></h3>
+            <button id="reset" onclick="reset()">Brokie button</button>
+        <body><script>var clicks = 0;
+        function increase() {
+            clicks = clicks + 1;
+            amount.innerHTML = clicks
+        }
+        function reset() {
+            clicks = 0;
+            amount.innerHTML = clicks;
+        }
+    </script>
 
-
-
-<h3>At the top are the websites I created this year :)</h3>
-
-<img src="https://bluemoji.io/emoji/Blue/86.png" alt="fuck you">
+     <style>body {
+            background-color: #99ffcc;
+            color: purple;
+        }
+        #amount {
+            color: red;
+        }
+        #dollar {
+            width: 300px;
+            length: 200px;
+        }
+        .reset {
+            
+        }
+     </style></body></body></html>
 
 
 			
@@ -49,7 +76,7 @@
 						import("./_app/immutable/entry/app.3c32bd40.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2],
+							node_ids: [0, 4],
 							data,
 							form: null,
 							error: null
